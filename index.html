@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <!-- Title, desc and OG sets-->
+        <meta name="author" content="Franky Jr Blondeel">
+        <meta name="description" content="BlogSpace - Good ol' bloggin!" />
+        <meta property="og:title" content="BlogSpace" />
+        <meta property="og:url" content="https://bored-botz.netlify.app/" />
+        <meta property="og:description" content="BlogSpace uses a special API to fetch its posts. That's crazy!" />
+        <meta property="og:image" content="https://bored-botz.netlify.app/images/icons/regularOG.png" />
+        <title>BlogSpace - API at work!</title>
+        <!-- style sets & fonts-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,500;1,200&family=Maven+Pro:wght@500;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <!-- meta sets-->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale = 1.0">
+        <!-- icon sets-->
+        <link rel="icon" href="/images/icons/favicon.ico" sizes="any"><!-- 32×32 -->
+        <link rel="icon" href="/images/icons/icon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png"><!-- 180×180 -->
+        <link rel="manifest" href="/manifest/manifest.webmanifest">
+    </head>
+    <body>
+            <header>
+                <div class="container headercontainer">
+                    <h1>BlogSpace</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main id="main-block">
+                <div class="container">
+                    <form id="new-post">
+                        <label for="title-input" form="new-post">Title</label>
+                        <input type="text" placeholder="Enter a title..." id="title-input" required form="new-post">
+                        <label for="post-input" form="new-post">Post something...</label>
+                        <textarea placeholder="Type your post..." id="post-input" required rows="5" cols="30" form="new-post"></textarea>
+                        <button type="submit" form="new-post">Post</button>
+                    </form>
+                </div>
+                <div id="postscontainer" class="container postscontainer">
+                    
+                </div>
+            </main>
+            <footer>
+                <div class="container">
+                    Designed in 🇧🇪 - Powered by jsonplaceholderAPI
+                </div>
+            </footer>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

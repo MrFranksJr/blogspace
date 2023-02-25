@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+header {
+    color: #00FFC5;
+    background-color: #481620;
+    height: 75px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.headercontainer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, nav ul li a, footer {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #00FFC5;
+    padding: 0 1.5rem;
+}
+
+nav ul li a:hover {
+    background-color: #D55672;
+}
+
+main {
+    padding-top: 100px;
+}
+
+h3 {
+    font-family: 'Karla', sans-serif;
+    color: #00FFC5;
+    margin: 0;
+    font-weight: 500;
+}
+
+.postscontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.post {
+    background-color: #0075A2;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #ADF5FF;
+    margin: 0 0.5rem;
+}
+
+.post-body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+footer {
+    background-color: #D55672;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ADF5FF;
+}
+
+form {
+    font-family: 'Maven Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #D55672;
+    margin: 0.5rem 0.5rem 2rem;
+    border-radius: 6px;
+}
+
+form label,
+form input,
+form textarea {
+    width: 100%;
+}
+
+form label {
+    font-size: 1.25rem;
+    padding: 0.3rem 0;
+    color: #00FFC5;
+}
+
+form input {
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 6px;
+}
+
+form textarea {
+    margin-bottom: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3rem;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    align-self: baseline;
+    width: 150px;
+    height: 50px;
+    border: 3px solid transparent;
+    background-color: #00FFC5;
+    border-radius: 6px;
+    color: #0075A2;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus     {
+    border-color: #0075A2;
+}
+
+button:active {
+    border-color: #00FFC5;
+    background-color: #ADF5FF;
+    color: #0075A2;
+}
