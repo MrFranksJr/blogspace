@@ -1,22 +1,38 @@
-import { randomIntFromInterval } from "/data/utils.js"
+import { randomizeBorderRadius } from "/data/utils.js"
 
+let postsArray = []
+const fetchUrl = 'https://apis.scrimba.com/jsonplaceholder/'
+const postsEndPoint = 'posts'
+const postsContainer = document.getElementById('postscontainer')
+
+//initial fetch
+fetch(fetchUrl + postsEndPoint)
+    .then(response => response.json())
+    .then(data => {
+        postsArray = data.slice(0,10)
+        renderPosts(postsArray)
+})
+
+//submit new post
 document.addEventListener('submit', e => {
     e.preventDefault();
     const post = {
         title: e.target[0].value,
         body: e.target[1].value
     }
-})
+    const fetchOptions = {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(post)
+        }
 
-fetch("https://apis.scrimba.com/jsonplaceholder/posts")
+    fetch(fetchUrl + postsEndPoint, fetchOptions)
     .then(response => response.json())
     .then(data => {
-        const postArr = data.slice(0,5)
-        document.getElementById('postscontainer').innerHTML = `${buildPostsHtml(postArr)}`
-        for (let post of document.getElementsByClassName('post')) {
-            post.style.borderRadius = `${randomIntFromInterval(10,32)}% ${randomIntFromInterval(10,32)}% / ${randomIntFromInterval(10,40)}% ${randomIntFromInterval(10,25)}%`
-        }
+        postsArray.unshift(data)
+        renderPosts(postsArray)
     })
+})
 
 function buildPostsHtml(postArr) {
     let postHtml = ''
@@ -31,4 +47,9 @@ function buildPostsHtml(postArr) {
         `
     }
     return postHtml
+}
+
+function renderPosts(postsArray) {
+    postsContainer.innerHTML = buildPostsHtml(postsArray)
+    randomizeBorderRadius()
 }
