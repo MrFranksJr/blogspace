@@ -32,6 +32,7 @@ document.addEventListener('submit', e => {
         postsArray.unshift(data)
         renderPosts(postsArray)
     })
+    document.getElementById("new-post-form").reset();
 })
 
 function buildPostsHtml(postArr) {
