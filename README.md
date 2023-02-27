@@ -1,21 +1,26 @@
-# ceaVDvfR
+*Feb 27, 2022 - Franky Jr Blondeel*
+<p align="center">
+<img alt="banner image" src="https://raw.githubusercontent.com/MrFranksJr/MrFranksJr/main/assets/blogspace/Banner.png">
+</p>
 
-Quick start:
+# BlogSpace – HTTP Request and RESTful APIs
 
-```
-$ npm install
-$ npm start
-````
+## Overview
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
+**Live version [here](https://frankysblogspace.netlify.app/)**
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+BlogSpace is a little app app, part of Module 8 of the Front-Developer Career Path over at [scrimba.com](https://scrimba.com).
+With this app, we focused on getting data from the JSONPlaceHolderAPI service, and displaying 'article-style' elements on the screen.
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+We also allow users to create a post on BlogSpace, although the data is not really saved on the backend. We basically send a POST request to the JSONPlaceHolderAPI and get a response with the content of our original message back. And an ID. Which we are not really using 😂
 
-Happy Coding!
+Anyway! It's a very tiny project, I did not spend any time at all on the styling or anything. Well maybe a little styling here and there. But I wanted to focus on the technical side here.
+
+APIs are really interesting, and I did work with them a lot already in my job as a Solution Architect, to interact with Esko's WebCenter Application.
+
+It was nice to build something from the ground up and really understand how these APIs typically work.
+
+Below are once more the topics we covered in this module:
+<p align="center">
+<img alt="requirements" src="https://raw.githubusercontent.com/MrFranksJr/MrFranksJr/main/assets/blogspace/topics.png">
+</p>
