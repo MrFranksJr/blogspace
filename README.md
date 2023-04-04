@@ -10,7 +10,7 @@
 
 **Live version [here](https://frankysblogspace.netlify.app/)**
 
-BlogSpace is a little app app, part of Module 8 of the Front-Developer Career Path over at [scrimba.com](https://scrimba.com).
+BlogSpace is a little app app, part of Module 9 of the Front-Developer Career Path over at [scrimba.com](https://scrimba.com).
 With this app, we focused on getting data from the JSONPlaceHolderAPI service, and displaying 'article-style' elements on the screen.
 
 We also allow users to create a post on BlogSpace, although the data is not really saved on the backend. We basically send a POST request to the JSONPlaceHolderAPI and get a response with the content of our original message back. And an ID. Which we are not really using 😂
